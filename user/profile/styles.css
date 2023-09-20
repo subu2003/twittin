@@ -1,0 +1,287 @@
+/* srinath ns, 20BCE1074 */
+
+body {
+    background-color: gainsboro;
+    /* display: flex; */
+    align-items: center;
+    /* align-items: center; */
+}
+
+.main {
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px;
+    padding: 15px;
+    background-color: white;
+    border: 0px;
+    border-radius: 10px;
+    position: sticky;
+    width: 50%;
+    align-items: center;
+    margin-left: 360px;
+}
+
+.header__left img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__left {
+    display: flex;
+}
+
+.header__right {
+    display: flex;
+}
+
+.header__search {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #eef3f8;
+}
+
+.header__search>input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.headerOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+
+.headerOption:hover {
+    color: black;
+}
+
+.headerOption h3 {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.headerOption__icon {
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.left__content {
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+.middle__content {
+    background-color: ganisboro;
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    border-radius: 20px;
+    padding: 0px 50px 50px 50px;
+    width: 60%;
+    height: 500px;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    height: 8px;
+    margin: 5px 0px 30px 0px;
+}
+
+.box-sm {
+    height: 8px;
+    margin: 0;
+    flex-grow: 1;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+}
+
+.box-sm:hover {
+    flex-grow: 12;
+}
+
+.red {
+    background-color: #FF5852;
+}
+
+.orange {
+    background-color: #FF9000;
+}
+
+.yellow {
+    background-color: #FFD300;
+}
+
+.green {
+    background-color: #3DCD49;
+}
+
+.blue {
+    background-color: #0089D7;
+}
+
+.purple {
+    background-color: #9E44C4;
+}
+
+.scrollable {
+    height: 700px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+
+.right__content {
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.post__header {
+    display: flex;
+    margin: 10;
+}
+
+.post__info {
+    margin-left: 20px;
+}
+
+.post__info>p {
+    font-size: 12px;
+    color: gray;
+}
+
+.post__info>h2 {
+    font-size: 15px;
+}
+
+.feed__inputOptions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post__body {
+    padding: 30px;
+    line-height: 1.3rem;
+}
+
+.inputOption {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: gray;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.inputOption:hover {
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.news_para {
+    color: gray;
+    font-size: 12px;
+}
+
+.news {
+    height: 150px;
+    overflow: auto;
+}
+
+.news>ul>a>li {
+    color: black;
+    font-weight: bold;
+}
+
+.news>ul>p {
+    color: gray;
+    font-size: 10px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
